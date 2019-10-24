@@ -15,6 +15,9 @@
 		A5DADE3C23623623005C369D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DADE3A23623623005C369D /* LaunchScreen.storyboard */; };
 		A5DADE4723623624005C369D /* JSONPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE4623623624005C369D /* JSONPracticeTests.swift */; };
 		A5DADE5223623624005C369D /* JSONPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE5123623624005C369D /* JSONPracticeUITests.swift */; };
+		A5DADE6023623672005C369D /* RetrieveJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE5F23623672005C369D /* RetrieveJSON.swift */; };
+		A5DADEDC236244AD005C369D /* QueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDB236244AD005C369D /* QueryParams.swift */; };
+		A5DADEDE236245DC005C369D /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDD236245DC005C369D /* NewsAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A5DADE4D23623624005C369D /* JSONPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DADE5123623624005C369D /* JSONPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPracticeUITests.swift; sourceTree = "<group>"; };
 		A5DADE5323623624005C369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DADE5F23623672005C369D /* RetrieveJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveJSON.swift; sourceTree = "<group>"; };
+		A5DADEDB236244AD005C369D /* QueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParams.swift; sourceTree = "<group>"; };
+		A5DADEDD236245DC005C369D /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		A5DADE2E23623622005C369D /* JSONPractice */ = {
 			isa = PBXGroup;
 			children = (
+				A5DADEDA236243E1005C369D /* Models */,
+				A5DADED9236243D3005C369D /* APIs */,
 				A5DADE2F23623622005C369D /* AppDelegate.swift */,
 				A5DADE3123623622005C369D /* SceneDelegate.swift */,
 				A5DADE3323623622005C369D /* ViewController.swift */,
@@ -106,6 +114,7 @@
 				A5DADE3823623623005C369D /* Assets.xcassets */,
 				A5DADE3A23623623005C369D /* LaunchScreen.storyboard */,
 				A5DADE3D23623623005C369D /* Info.plist */,
+				A5DADE5F23623672005C369D /* RetrieveJSON.swift */,
 			);
 			path = JSONPractice;
 			sourceTree = "<group>";
@@ -126,6 +135,22 @@
 				A5DADE5323623624005C369D /* Info.plist */,
 			);
 			path = JSONPracticeUITests;
+			sourceTree = "<group>";
+		};
+		A5DADED9236243D3005C369D /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				A5DADEDD236245DC005C369D /* NewsAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		A5DADEDA236243E1005C369D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5DADEDB236244AD005C369D /* QueryParams.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DADE3423623622005C369D /* ViewController.swift in Sources */,
+				A5DADE6023623672005C369D /* RetrieveJSON.swift in Sources */,
 				A5DADE3023623622005C369D /* AppDelegate.swift in Sources */,
+				A5DADEDC236244AD005C369D /* QueryParams.swift in Sources */,
 				A5DADE3223623622005C369D /* SceneDelegate.swift in Sources */,
+				A5DADEDE236245DC005C369D /* NewsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

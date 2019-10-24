@@ -30,5 +30,22 @@ class JSONPracticeTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testNewsAPIData(){
+        let queryParams = QueryParams("ca", "science")
+        let request = NewsAPI.newsListAPI(queryParams)
+        XCTAssertEqual(request.httpMethod, "POST")
+        XCTAssertEqual(request.url, URL(string: "https://newsapi.org/v2/top-headlines"))
+        let retQueryParams = try? JSONDecoder().decode(QueryParams.self, from: request.httpBody!)
+        XCTAssertEqual(retQueryParams?.category, queryParams.category)
+        XCTAssertEqual(retQueryParams?.country, queryParams.country)
+        XCTAssertEqual(retQueryParams?.apiKey, queryParams.apiKey)
+        
+    }
+    func testNewsAPIRequest(){
+        let queryParams = QueryParams("ca", "science")
+        let request = NewsAPI.newsListAPI(queryParams)
+        
+    }
 
 }
