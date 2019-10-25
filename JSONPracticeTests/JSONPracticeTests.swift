@@ -45,6 +45,12 @@ class JSONPracticeTests: XCTestCase {
     func testNewsAPIRequest(){
         let queryParams = QueryParams("ca", "science")
         let request = NewsAPI.newsListAPI(queryParams)
+        let expectation = self.expectation(description: "Downloading data")
+        RetrieveJSON.getResponse(request, { articles in
+            print(articles)
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 10, handler: nil)
         
     }
 

@@ -16,9 +16,9 @@
 		A5DADE4723623624005C369D /* JSONPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE4623623624005C369D /* JSONPracticeTests.swift */; };
 		A5DADE5223623624005C369D /* JSONPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE5123623624005C369D /* JSONPracticeUITests.swift */; };
 		A5DADE6023623672005C369D /* RetrieveJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE5F23623672005C369D /* RetrieveJSON.swift */; };
-		A5DADEDC236244AD005C369D /* QueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDB236244AD005C369D /* QueryParams.swift */; };
 		A5DADEDE236245DC005C369D /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDD236245DC005C369D /* NewsAPI.swift */; };
 		A5DADEE023625847005C369D /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDF23625846005C369D /* Articles.swift */; };
+		F0A99E99236260B8008D4447 /* QueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A99E98236260B8008D4447 /* QueryParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +54,9 @@
 		A5DADE5123623624005C369D /* JSONPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPracticeUITests.swift; sourceTree = "<group>"; };
 		A5DADE5323623624005C369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DADE5F23623672005C369D /* RetrieveJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveJSON.swift; sourceTree = "<group>"; };
-		A5DADEDB236244AD005C369D /* QueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParams.swift; sourceTree = "<group>"; };
 		A5DADEDD236245DC005C369D /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
 		A5DADEDF23625846005C369D /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		F0A99E98236260B8008D4447 /* QueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 		A5DADEDA236243E1005C369D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A5DADEDB236244AD005C369D /* QueryParams.swift */,
+				F0A99E98236260B8008D4447 /* QueryParams.swift */,
 				A5DADEDF23625846005C369D /* Articles.swift */,
 			);
 			path = Models;
@@ -287,11 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A99E99236260B8008D4447 /* QueryParams.swift in Sources */,
 				A5DADEE023625847005C369D /* Articles.swift in Sources */,
 				A5DADE3423623622005C369D /* ViewController.swift in Sources */,
 				A5DADE6023623672005C369D /* RetrieveJSON.swift in Sources */,
 				A5DADE3023623622005C369D /* AppDelegate.swift in Sources */,
-				A5DADEDC236244AD005C369D /* QueryParams.swift in Sources */,
 				A5DADE3223623622005C369D /* SceneDelegate.swift in Sources */,
 				A5DADEDE236245DC005C369D /* NewsAPI.swift in Sources */,
 			);

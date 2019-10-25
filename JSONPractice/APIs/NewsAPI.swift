@@ -17,8 +17,9 @@ struct NewsAPI {
     }
     static func newsListAPI(_ queryParams: QueryParams) -> URLRequest{
         let url = URL(string: "https://newsapi.org/v2/top-headlines")!
+        //url.query = try? getJsonQueryParams(queryParams)
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "GET"
         request.httpBody = try? getJsonQueryParams(queryParams)
         return request
     }

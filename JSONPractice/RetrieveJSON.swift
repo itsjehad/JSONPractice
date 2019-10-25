@@ -9,7 +9,7 @@
 import Foundation
 
 struct RetrieveJSON {
-    static func getResponse(_ request: URLRequest, _ callBack: (Articles) -> ())
+    static func getResponse(_ request: URLRequest, _ callBack: @escaping  (Articles) -> ())
     {
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
