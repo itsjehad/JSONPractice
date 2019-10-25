@@ -9,17 +9,18 @@
 import Foundation
 
 struct RetrieveJSON {
-    static func getResponse(_ request: URLRequest, _ callBack: @escaping  (Articles) -> ())
+    
+    static func getResponse(_ url: URL, _ callBack: @escaping  (ArticleList) -> ())
     {
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let error = error {
-                print("error:", error)
-                return
-            }
+        let session = URLSession.shared
+        let httpClient = HTTPClient(session: session)
+        /*
+        httpClient.get(url: url) { (data, response) in
             guard let data = data else { return }
             let articles = try? JSONDecoder().decode(Articles.self, from: data)
             callBack(articles!)
         }
-        task.resume()
+ */
     }
+    
 }

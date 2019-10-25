@@ -43,15 +43,44 @@ class JSONPracticeTests: XCTestCase {
         
     }
     func testNewsAPIRequest(){
-        let queryParams = QueryParams("ca", "science")
-        let request = NewsAPI.newsListAPI(queryParams)
+         guard let url = URL(string: "https://newsapi.org/v2/top-headlines") else {
+                   fatalError("URL can't be empty")
+               }
         let expectation = self.expectation(description: "Downloading data")
-        RetrieveJSON.getResponse(request, { articles in
+        RetrieveJSON.getResponse(url, { articles in
             print(articles)
             expectation.fulfill()
         })
-        waitForExpectations(timeout: 10, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
         
+    }
+    
+    func test_get_request_withURL() {
+        guard let url = URL(string: "https://newsapi.org/v2/top-headlines") else {
+            fatalError("URL can't be empty")
+        }
+        let session = URLSession.shared
+        let httpClient = HTTPClient(session: session)
+        //httpClient.get(url: url) { (success, response) in
+            // Return data
+        //}
+        //XCTAssert(httpClient. == url)
+    }
+    
+    func test_get_request_withParams() {
+        let session = URLSession.shared
+        let queryParams = QueryParams("ca", "science")
+        let httpClient = HTTPClient(session: session)
+        let expectation = self.expectation(description: "Downloading data")
+        httpClient.sendRequest("https://newsapi.org/v2/top-headlines", parameters: queryParams.getQueryParamsDict(), completion: { (articleList, response) in
+            expectation.fulfill()
+            XCTAssert(articleList?.status == "ok")
+            XCTAssert(articleList?.totalResults == 70)
+            XCTAssert(articleList?.totalResults == articleList?.articles.count)
+            // Return data
+        })
+        waitForExpectations(timeout: 30, handler: nil)
+        //XCTAssert(httpClient. == url)
     }
 
 }

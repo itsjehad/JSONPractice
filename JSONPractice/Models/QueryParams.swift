@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct QueryParams: Encodable, Decodable{
+struct QueryParams: Codable{
     let country: String
     let category: String
     let apiKey: String
@@ -16,5 +16,8 @@ struct QueryParams: Encodable, Decodable{
         self.country = country
         self.category = category
         self.apiKey = apiKey
+    }
+    func getQueryParamsDict() -> [String: String]{
+        return ["country": country, "category": category, "apiKey": apiKey]
     }
 }

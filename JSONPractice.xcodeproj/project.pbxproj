@@ -17,7 +17,9 @@
 		A5DADE5223623624005C369D /* JSONPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE5123623624005C369D /* JSONPracticeUITests.swift */; };
 		A5DADE6023623672005C369D /* RetrieveJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE5F23623672005C369D /* RetrieveJSON.swift */; };
 		A5DADEDE236245DC005C369D /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDD236245DC005C369D /* NewsAPI.swift */; };
-		A5DADEE023625847005C369D /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDF23625846005C369D /* Articles.swift */; };
+		A5DADEE023625847005C369D /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEDF23625846005C369D /* ArticleList.swift */; };
+		A5DADEE22363418A005C369D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEE12363418A005C369D /* HTTPClient.swift */; };
+		A5DADEE62363A97D005C369D /* NewsHeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADEE52363A97D005C369D /* NewsHeadlineViewController.swift */; };
 		F0A99E99236260B8008D4447 /* QueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A99E98236260B8008D4447 /* QueryParams.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +57,9 @@
 		A5DADE5323623624005C369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DADE5F23623672005C369D /* RetrieveJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveJSON.swift; sourceTree = "<group>"; };
 		A5DADEDD236245DC005C369D /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
-		A5DADEDF23625846005C369D /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		A5DADEDF23625846005C369D /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
+		A5DADEE12363418A005C369D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		A5DADEE52363A97D005C369D /* NewsHeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeadlineViewController.swift; sourceTree = "<group>"; };
 		F0A99E98236260B8008D4447 /* QueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 				A5DADE3A23623623005C369D /* LaunchScreen.storyboard */,
 				A5DADE3D23623623005C369D /* Info.plist */,
 				A5DADE5F23623672005C369D /* RetrieveJSON.swift */,
+				A5DADEE52363A97D005C369D /* NewsHeadlineViewController.swift */,
 			);
 			path = JSONPractice;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DADEDD236245DC005C369D /* NewsAPI.swift */,
+				A5DADEE12363418A005C369D /* HTTPClient.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -151,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F0A99E98236260B8008D4447 /* QueryParams.swift */,
-				A5DADEDF23625846005C369D /* Articles.swift */,
+				A5DADEDF23625846005C369D /* ArticleList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,9 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0A99E99236260B8008D4447 /* QueryParams.swift in Sources */,
-				A5DADEE023625847005C369D /* Articles.swift in Sources */,
+				A5DADEE023625847005C369D /* ArticleList.swift in Sources */,
+				A5DADEE22363418A005C369D /* HTTPClient.swift in Sources */,
 				A5DADE3423623622005C369D /* ViewController.swift in Sources */,
 				A5DADE6023623672005C369D /* RetrieveJSON.swift in Sources */,
+				A5DADEE62363A97D005C369D /* NewsHeadlineViewController.swift in Sources */,
 				A5DADE3023623622005C369D /* AppDelegate.swift in Sources */,
 				A5DADE3223623622005C369D /* SceneDelegate.swift in Sources */,
 				A5DADEDE236245DC005C369D /* NewsAPI.swift in Sources */,

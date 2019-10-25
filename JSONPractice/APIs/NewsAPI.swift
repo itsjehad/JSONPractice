@@ -15,6 +15,11 @@ struct NewsAPI {
         return jsonData
         
     }
+    /*
+    static func getQueryParams(_ queryParams: QueryParams) -> String{
+        
+    }
+ */
     static func newsListAPI(_ queryParams: QueryParams) -> URLRequest{
         let url = URL(string: "https://newsapi.org/v2/top-headlines")!
         //url.query = try? getJsonQueryParams(queryParams)
